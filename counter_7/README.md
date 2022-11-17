@@ -39,14 +39,20 @@ A new Flutter project.
 
 ## Sebutkan widget apa saja yang kamu pakai di proyek kali ini dan jelaskan fungsinya.
 -> Drawer : Sebagai hamburger menu untuk navigasi ke halaman berbeda.
+
 -> TextFormField : Untuk menerima input dari user.
+
 -> DropdownButton: Untuk menentukan input yang diberikan adalah pemasukan atau pengeluaran.
+
 -> FloatingActionButton : Button yang di-bind untuk menambahkan data ke dalam list
 
 ## Sebutkan jenis-jenis event yang ada pada Flutter (contoh: onPressed).
 ->  onPressed()
+
 -> onTap()
+
 -> onChanged()
+
 -> onSaved()
 
 ## Jelaskan bagaimana cara kerja Navigator dalam “mengganti halaman dari aplikasi Flutter.
