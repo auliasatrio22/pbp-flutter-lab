@@ -32,3 +32,31 @@ A new Flutter project.
 
 ## Jelaskan bagaimana cara kamu mengimplementasikan checklist di atas.
 -> Hal yang pertama saya lakukan dengan adalah dengan membuat aplikasi counter_7 dengan menggunakan perintah flutter create counter_7. Lalu saya membuat variabel counter pada class _MyHomePageState untuk menginisiasi angka 0 yang nantinya akan berubah seiring aplikasi berjalan. Selanjutnya, saya membuat method _decrementCounter(), dalam method ini akan melakukan pengurangan counter dan method ini saya menambahkan kondisi apabila counter = 0 maka method ini tidak akan tampil. Pada proses ini dilakukan dalam fungsi setState(). Kemudian, saya membuat program yang akan melakukan pengecekan pada angka. Program ini akan melihat apakah angka tersebut berupa ganjil atau genap, dilihat melalui counter yang berubah-ubah nilainya. Ketika counter tersebut menunjukkan angka genap, maka text yang akan terlihat berupa tulisan genap yang berwarna merah, begitupun sebaliknya tetapi text ganjil yang tampil akan berwarna biru. Setelah itu saya menambahkan widget floatingActionButton lalu memasukkan fungsi atau method yang sudah kita buat sebelumnya pada onPressed yang pada tugas ini bernama _decrementCounter dan _incrementCounter. Jadi ketika diklik maka akan menjalankan method tersebut.
+
+# Tugas 8
+## Jelaskan perbedaan Navigator.push dan Navigator.pushReplacement.
+-> Navigator.push bekerja dengan cara menambahkan sebuah rute ke stack navigator, sedangkan Navigator.pushReplacement bekerja dengan cara mengganti rute yang sedang ditampilkan dengan push route datau halaman baru ke stack navigator.
+
+## Sebutkan widget apa saja yang kamu pakai di proyek kali ini dan jelaskan fungsinya.
+-> Drawer : Sebagai hamburger menu untuk navigasi ke halaman berbeda.
+
+-> TextFormField : Untuk menerima input dari user.
+
+-> DropdownButton: Untuk menentukan input yang diberikan adalah pemasukan atau pengeluaran.
+
+-> FloatingActionButton : Button yang di-bind untuk menambahkan data ke dalam list
+
+## Sebutkan jenis-jenis event yang ada pada Flutter (contoh: onPressed).
+->  onPressed()
+
+-> onTap()
+
+-> onChanged()
+
+-> onSaved()
+
+## Jelaskan bagaimana cara kerja Navigator dalam “mengganti halaman dari aplikasi Flutter.
+-> Navigator bekerja dengan konsep Last In First Out, seperti struktur data stack. Setiap tampilan akan di push ke stack navigator untuk ditampilkan, sehingga yang tampil adalah halaman yang paling terakhir di push yang berarti berada di posisi paling atas stack.
+
+## Jelaskan bagaimana cara kamu mengimplementasikan checklist di atas.
+-> Hal yang dilakukan terlebih dahulu adalah membuat widget drawer untuk navigasi ke halaman lain. Lalu membuat file baru pada folder lib yang bernama tambah.dart untuk menerima input dari user dan data.dart untuk menampilkan input dari user yang sudah ditambahkan. Kemudian membuat FloatingActionButton untuk menyimpan input dan melakukan validasi terhadap input sudah terisi atau belum. Mengimport file tambah.dart dan main.dart agar list input data dapat diakses pada data.dart. Menampilkan data pada list dengan menggunakan builder ListView.builder().
