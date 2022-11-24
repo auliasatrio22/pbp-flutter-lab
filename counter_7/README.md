@@ -60,3 +60,50 @@ A new Flutter project.
 
 ## Jelaskan bagaimana cara kamu mengimplementasikan checklist di atas.
 -> Hal yang dilakukan terlebih dahulu adalah membuat widget drawer untuk navigasi ke halaman lain. Lalu membuat file baru pada folder lib yang bernama tambah.dart untuk menerima input dari user dan data.dart untuk menampilkan input dari user yang sudah ditambahkan. Kemudian membuat FloatingActionButton untuk menyimpan input dan melakukan validasi terhadap input sudah terisi atau belum. Mengimport file tambah.dart dan main.dart agar list input data dapat diakses pada data.dart. Menampilkan data pada list dengan menggunakan builder ListView.builder().
+
+# Tugas 9
+## Apakah bisa kita melakukan pengambilan data JSON tanpa membuat model terlebih dahulu? Jika iya, apakah hal tersebut lebih baik daripada membuat model sebelum melakukan pengambilan data JSON?
+-> Pada pengambilan data JSON, kita dapat melakukan pengambilan data dalam bentuk http respone yang melalui bentuk raw data sehingga tidak perlu membuat model terlebih dahulu. Kemudian, untuk kemudahan dalam pengaksesan data disarankan untuk membuat model terlebih dahulu untuk menampung data JSON sehingga bisa mempermudah untuk melakukan operasi data.
+
+## Sebutkan widget apa saja yang kamu pakai di proyek kali ini dan jelaskan fungsinya.
+-> TextStyle: Berfungsi untuk memberikan styling pada text
+
+-> Text: Untuk menampilkan text pada aplikasi yang dibuat
+
+-> Column: Berfungsi untuk mengatur posisi letak widget
+
+-> MaterialApp: Merupakan parent yang akan menerapkan style material design pada sesuatu yang diapitnya
+
+-> Center: Untuk meletakkan widget ke bagian tengah
+
+-> Card : Berfungsi untuk menampilkan card
+
+-> Drawer : Berfungsi untuk memberikan navbar pada aplikasi
+
+-> ListView.builder : Berfungsi untuk menampilkan list of children yang dapat di scroll
+
+-> SizedBox : Berfungsi untuk membuat box sehingga juga digunakan untuk menambah jarak
+
+-> Container : Berfungsi sebagai pembungkus widget lainnya
+
+-> FloatingActionButton: Untuk membuat suatu tombol
+
+-> Padding : Membuat layout pada tampilan aplikasi untuk masing-masing widget
+
+-> Scaffold: Untuk mengatur struktur visual layout yang diimplementasikan melalui material design
+
+-> FutureBuilder : Berfungsi untuk fetching data
+
+## Jelaskan mekanisme pengambilan data dari json hingga dapat ditampilkan pada Flutter.
+-> Membuat folder model beserta class untuk menginisiasikan data dari JSON.
+
+-> Membuat method dengan http yang direfactor menjadi file baru.
+
+-> Response pada http tersebut akan diubah menjadi menjadi object Dart.
+
+-> Data dapat memanfaatkan FutureWidget untuk mendisplay data tersebut, widget ini digunakan karena menggunakan future yang memberikan delay pada pengambilan data
+
+-> Melakukan loop pada data yang terdapat pada database untuk menampilkan data
+
+## Jelaskan bagaimana cara kamu mengimplementasikan checklist di atas.
+-> Langkah pertama yang saya lakukan adalah dengan membuat folder bernama model didalam folder lib yang didalamnya terdapat file mywatchlist.dart yang menjadi model untuk menampung data json. Lalu kita tambahkan page route drawer agar dapat dilakukan route ke watchlist. Membuat method dengan http yang direfactor menjadi file baru Selanjutnya, kita membuat file watchlist.dart untuk menampilkan list movie serta menambahkan detailfilm.dart untuk menampilkan detail dari movie yang terdapat dalam database. Lalu kita atur sesuai dengan spesifikasi soal.
